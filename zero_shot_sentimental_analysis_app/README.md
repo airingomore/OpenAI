@@ -1,12 +1,14 @@
-The projecty is based on an Emotional Detector app creted with Streamlit and connnected with OpenAI to generate accurate answers.
-The app will check some sentences and then will classify them into different emotions.
+#H2 Zero Shot Sentimental Analysis
+The projecty is based on an Emotional Detector app creted with Streamlit and connnected with OpenAI API.
+The app will check the emotion in the user prompts and will classify them into different emotions. The emotions are selected by the user.
 
-To run the app:
+#H2 To run the app
 - Dowload the code
 - Execute `streamlit run isentimental_analysis.py`
 
-To check the app::
-- By default the app is configured to analyze the sentences into 3 values: positive, negative and neutral
-- When user prompt a sentence the AI model will classify it into the values set in the previus section
-- All the classifications will be stored in history section
+#H2To check the app
+- By default the app is configured to analyze the sentences into 3 values: positive, negative and neutral. The classification values can be changed by the user
+- When the prompt is genereate and want to be checked the the AI model will classify it into the values set in the previus section
+- All the emotions classified will be stored in history section
 
+![Zero_Shot_Sentimental_App](ISentimentalApp.png)
