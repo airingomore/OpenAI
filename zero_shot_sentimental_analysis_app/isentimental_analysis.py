@@ -52,4 +52,16 @@ if __name__ == '__main__':
             result = f'{text} => {emotion} \n'
             st.write(result)
 
+            st.divider()
+
+            if 'history' not in st.session_state:
+                if result:
+                    st.session_state['history'] = result
+                else:
+                    st.session_state['history'] = ''
+            else:
+                st.session_state['history'] += result
+
+            if st.session_state['history']:
+                st.text_area(label='History', value=st.session_state['history'], height=600)
 
